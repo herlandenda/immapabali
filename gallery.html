@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Kegiatan - IMMAPA Bali</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'immapa-green': '#1E4620',
+                        'immapa-gold': '#FACC15',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+    <header class="bg-immapa-green text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="aset/logo immapa.png" alt="Logo IMMAPA Bali" class="w-10 h-10 rounded-full">
+                <span class="font-bold text-xl tracking-wider">IMMAPA BALI</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-semibold text-sm">
+                <a href="index.html" class="hover:text-immapa-gold transition duration-300">Beranda</a>
+                <a href="about.html" class="hover:text-immapa-gold transition duration-300">Tentang Kami</a>
+                <a href="program.html" class="hover:text-immapa-gold transition duration-300">Program</a>
+                <a href="gallery.html" class="text-immapa-gold transition duration-300">Galeri</a>
+                <li><a href="https://humasimmapabali.blogspot.com/" target="_blank" class="hover:text-immapa-gold transition text-immapa-gold">Blog & Berita Humas</a></li>
+
+            </nav>
+            <div class="hidden md:block">
+                <a href="#" class="bg-immapa-gold text-immapa-green font-bold px-5 py-2 rounded-full hover:bg-yellow-300 transition duration-300">Hubungi Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-immapa-green py-20 border-b-8 border-immapa-gold relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Galeri Kegiatan</h1>
+            <p class="text-lg text-gray-200 max-w-2xl mx-auto">Momen kebersamaan, aksi nyata, dan rekam jejak perjalanan keluarga besar IMMAPA Bali.</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white flex-grow">
+        <div class="container mx-auto px-6">
+            
+            <div class="flex flex-wrap justify-center gap-3 mb-12" id="filter-buttons">
+                <button class="filter-btn active bg-immapa-green text-white px-6 py-2 rounded-full font-semibold transition duration-300" data-filter="all">Semua</button>
+                <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-immapa-gold hover:text-immapa-green px-6 py-2 rounded-full font-semibold transition duration-300" data-filter="pekeba">PEKEBA</button>
+                <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-immapa-gold hover:text-immapa-green px-6 py-2 rounded-full font-semibold transition duration-300" data-filter="sosial">Aksi Sosial</button>
+                <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-immapa-gold hover:text-immapa-green px-6 py-2 rounded-full font-semibold transition duration-300" data-filter="budaya">Seni & Budaya</button>
+                <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-immapa-gold hover:text-immapa-green px-6 py-2 rounded-full font-semibold transition duration-300" data-filter="organisasi">Organisasi</button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                
+                <div class="gallery-item rounded-xl overflow-hidden shadow-md relative group" data-category="pekeba">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Kegiatan PEKEBA" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-immapa-gold text-xs font-bold uppercase tracking-wider mb-1">PEKEBA</span>
+                        <h3 class="text-white font-bold text-lg">Penerimaan Mahasiswa Baru 2026</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item rounded-xl overflow-hidden shadow-md relative group" data-category="budaya">
+                    <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tari Tradisional" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-immapa-gold text-xs font-bold uppercase tracking-wider mb-1">Seni & Budaya</span>
+                        <h3 class="text-white font-bold text-lg">Penampilan Tari Tradisional</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item rounded-xl overflow-hidden shadow-md relative group" data-category="sosial">
+                    <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bakti Sosial" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-immapa-gold text-xs font-bold uppercase tracking-wider mb-1">Aksi Sosial</span>
+                        <h3 class="text-white font-bold text-lg">Penggalangan Dana Tolikara</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item rounded-xl overflow-hidden shadow-md relative group" data-category="organisasi">
+                    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Rapat Pengurus" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-immapa-gold text-xs font-bold uppercase tracking-wider mb-1">Organisasi</span>
+                        <h3 class="text-white font-bold text-lg">Musyawarah Besar IMMAPA</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item rounded-xl overflow-hidden shadow-md relative group" data-category="pekeba">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Game Time PEKEBA" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-immapa-gold text-xs font-bold uppercase tracking-wider mb-1">PEKEBA</span>
+                        <h3 class="text-white font-bold text-lg">Games & Keakraban Day 2</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item rounded-xl overflow-hidden shadow-md relative group" data-category="sosial">
+                    <img src="https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ibadah Bersama" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                        <span class="text-immapa-gold text-xs font-bold uppercase tracking-wider mb-1">Kerohanian</span>
+                        <h3 class="text-white font-bold text-lg">Ibadah Paskah Bersama</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-immapa-green text-white pt-16 pb-8 border-t-4 border-immapa-gold">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">IMMAPA BALI</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-6 pr-4">
+                        Ikatan Mahasiswa dan Masyarakat Papua Bali
+                    </p>
+                    <h4 class="text-lg font-bold text-immapa-gold mb-4">Follow Us </h4>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/immapa.bali" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-immapa-gold hover:text-immapa-green transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/share/1cGGsaPZsh/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-immapa-gold hover:text-immapa-green transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-immapa-gold hover:text-immapa-green transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-immapa-gold mb-4">Informasi</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="about.html" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="program.html" class="hover:text-white transition">Program & Divisi</a></li>
+                        <li><a href="gallery.html" class="hover:text-white transition">Galeri Kegiatan</a></li>
+                        <a href="https://humasimmapabali.blogspot.com/" target="_blank" class="hover:text-immapa-gold transition duration-300 flex items-center gap-1">
+                    Berita Humas
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-immapa-gold mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>Sekretariat IMMAPA Bali<br>Jl. Tukad Yeh Aya IX No.52 Denpasar Selatan</li>
+                        <li>Bali Indonesia</li>
+                        <li class="mt-4 border-t border-white/20 pt-4">
+                            <a href="https://mail.google.com/mail/baliimmapa@gmail.com" target="_blank" class="hover:text-immapa-gold transition">Email: baliimmapa@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p>&copy; 2026 IMMAPA Bali. Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Hapus style active dari semua tombol
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-immapa-green', 'text-white');
+                    btn.classList.add('bg-gray-200', 'text-gray-700');
+                });
+                
+                // Tambah style active ke tombol yang diklik
+                button.classList.remove('bg-gray-200', 'text-gray-700');
+                button.classList.add('bg-immapa-green', 'text-white');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        // Tambahkan sedikit animasi fade-in sederhana
+                        item.style.animation = 'fadeIn 0.5s ease forwards';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</body>
+</html>

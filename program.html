@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program & Divisi - IMMAPA Bali</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'immapa-green': '#1E4620',
+                        'immapa-gold': '#FACC15',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+    <header class="bg-immapa-green text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="aset/logo immapa.png" alt="Logo IMMAPA Bali" class="w-10 h-10 rounded-full">
+                <span class="font-bold text-xl tracking-wider">IMMAPA BALI</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-semibold text-sm">
+                <a href="index.html" class="hover:text-immapa-gold transition duration-300">Beranda</a>
+                <a href="about.html" class="hover:text-immapa-gold transition duration-300">Tentang Kami</a>
+                <a href="program.html" class="text-immapa-gold transition duration-300">Program</a>
+                <a href="gallery.html" class="hover:text-immapa-gold transition duration-300">Galeri</a>
+                <a href="https://humasimmapabali.blogspot.com/" target="_blank" class="hover:text-immapa-gold transition duration-300 flex items-center gap-1">
+                    Berita Humas
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="#" class="bg-immapa-gold text-immapa-green font-bold px-5 py-2 rounded-full hover:bg-yellow-300 transition duration-300">Hubungi Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-immapa-green py-20 border-b-8 border-immapa-gold relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Program & Divisi</h1>
+            <p class="text-lg text-gray-200 max-w-2xl mx-auto">Motor penggerak organisasi melalui berbagai program kerja nyata untuk pengembangan sumber daya manusia dan pengabdian masyarakat.</p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h4 class="text-immapa-gold font-bold tracking-widest uppercase mb-2">Struktur Kerja</h4>
+                <h2 class="text-3xl md:text-4xl font-bold text-immapa-green mb-4">Bidang & Divisi IMMAPA Bali</h2>
+                <div class="w-24 h-1 bg-immapa-green mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:border-immapa-gold transition duration-300 group">
+                    <div class="w-14 h-14 bg-immapa-green text-white rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Pendidikan & Penalaran</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Fokus pada peningkatan kapasitas intelektual mahasiswa melalui diskusi rutin, bedah buku, dan pelatihan keterampilan akademik.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:border-immapa-gold transition duration-300 group">
+                    <div class="w-14 h-14 bg-immapa-green text-white rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Hubungan Masyarakat</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Menjalin relasi dan komunikasi yang baik dengan organisasi daerah lain, institusi kampus, serta masyarakat lokal di Bali.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:border-immapa-gold transition duration-300 group">
+                    <div class="w-14 h-14 bg-immapa-green text-white rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Seni & Budaya</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Wadah untuk menyalurkan bakat seni anggota dan menjaga eksistensi tarian serta musik tradisional Papua di tanah rantau.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:border-immapa-gold transition duration-300 group">
+                    <div class="w-14 h-14 bg-immapa-green text-white rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Kerohanian</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Mengkoordinasikan kegiatan ibadah rutin dan perayaan hari besar keagamaan untuk menjaga spiritualitas anggota.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl hover:border-immapa-gold transition duration-300 group">
+                    <div class="w-14 h-14 bg-immapa-green text-white rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Olahraga</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Mewadahi minat anggota di bidang olahraga untuk menjaga kebugaran jasmani dan memupuk solidaritas tim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-immapa-green mb-4">Program Unggulan</h2>
+                <div class="w-24 h-1 bg-immapa-gold mx-auto"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-12">
+                
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                    <div class="md:w-2/5 h-64 md:h-auto">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="PEKEBA" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-3/5 p-8 flex flex-col justify-center">
+                        <div class="inline-block bg-immapa-gold text-immapa-green text-xs font-bold px-3 py-1 rounded-full w-max mb-4">Program Tahunan</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Penerimaan Keluarga Baru (PEKEBA)</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Kegiatan penyambutan dan masa orientasi bagi mahasiswa dan masyarakat asal Papua yang baru tiba di Bali. Bertujuan untuk memperkenalkan lingkungan baru serta merangkul mereka ke dalam keluarga besar IMMAPA.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row-reverse">
+                    <div class="md:w-2/5 h-64 md:h-auto">
+                        <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bakti Sosial" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-3/5 p-8 flex flex-col justify-center">
+                        <div class="inline-block bg-immapa-gold text-immapa-green text-xs font-bold px-3 py-1 rounded-full w-max mb-4">Pengabdian Masyarakat</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Bakti Sosial & Penggalangan Dana</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Respon cepat tanggap terhadap isu kemanusiaan, baik yang terjadi di tanah Papua maupun di Bali. IMMAPA secara rutin melakukan penggalangan dana dan aksi turun ke jalan untuk membantu sesama.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-immapa-green text-white pt-16 pb-8 border-t-4 border-immapa-gold">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">IMMAPA BALI</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-6 pr-4">
+                        Ikatan Mahasiswa dan Masyarakat Papua Bali
+                    </p>
+                    <h4 class="text-lg font-bold text-immapa-gold mb-4">Follow Us </h4>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/immapa.bali" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-immapa-gold hover:text-immapa-green transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/share/1cGGsaPZsh/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-immapa-gold hover:text-immapa-green transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-immapa-gold hover:text-immapa-green transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-immapa-gold mb-4">Informasi</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="about.html" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="program.html" class="hover:text-white transition">Program & Divisi</a></li>
+                        <li><a href="gallery.html" class="hover:text-white transition">Galeri Kegiatan</a></li>
+                        <li><a href="https://humasimmapabali.blogspot.com/" target="_blank" class="hover:text-immapa-gold transition text-immapa-gold">Blog & Berita Humas</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-immapa-gold mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>Sekretariat IMMAPA Bali<br>Jl. Tukad Yeh Aya IX No.52 Denpasar Selatan</li>
+                        <li>Bali Indonesia</li>
+                        <li class="mt-4 border-t border-white/20 pt-4">
+                            <a href="https://mail.google.com/mail/baliimmapa@gmail.com" target="_blank" class="hover:text-immapa-gold transition">Email: baliimmapa@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p>&copy; 2026 IMMAPA Bali. Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
