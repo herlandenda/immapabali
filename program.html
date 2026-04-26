@@ -30,21 +30,37 @@
     <header class="bg-immapa-green text-white sticky top-0 z-50 shadow-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
-                <img src="aset/logo immapa.png" alt="Logo IMMAPA Bali" class="w-10 h-10 rounded-full">
+                <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-immapa-green font-bold text-xs">IMG</div>
                 <span class="font-bold text-xl tracking-wider">IMMAPA BALI</span>
             </a>
+
             <nav class="hidden md:flex space-x-8 font-semibold text-sm">
                 <a href="index.html" class="hover:text-immapa-gold transition duration-300">Beranda</a>
                 <a href="about.html" class="hover:text-immapa-gold transition duration-300">Tentang Kami</a>
-                <a href="program.html" class="text-immapa-gold transition duration-300">Program</a>
+                <a href="program.html" class="hover:text-immapa-gold transition duration-300">Program</a>
                 <a href="gallery.html" class="hover:text-immapa-gold transition duration-300">Galeri</a>
                 <a href="https://humasimmapabali.blogspot.com/" target="_blank" class="hover:text-immapa-gold transition duration-300 flex items-center gap-1">
                     Berita Humas
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                 </a>
             </nav>
+
             <div class="hidden md:block">
                 <a href="#" class="bg-immapa-gold text-immapa-green font-bold px-5 py-2 rounded-full hover:bg-yellow-300 transition duration-300">Hubungi Kami</a>
+            </div>
+
+            <button id="mobile-btn" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-immapa-green border-t border-white/10 px-6 py-4">
+            <div class="flex flex-col space-y-4 text-sm font-semibold">
+                <a href="index.html" class="hover:text-immapa-gold transition">Beranda</a>
+                <a href="about.html" class="hover:text-immapa-gold transition">Tentang Kami</a>
+                <a href="program.html" class="hover:text-immapa-gold transition">Program</a>
+                <a href="gallery.html" class="hover:text-immapa-gold transition">Galeri</a>
+                <a href="https://humasimmapabali.blogspot.com/" target="_blank" class="text-immapa-gold">Berita Humas</a>
             </div>
         </div>
     </header>
@@ -197,6 +213,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 </html>
