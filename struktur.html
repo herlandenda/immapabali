@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Struktur Organisasi - IMMAPA Bali</title>
     
-    <link rel="icon" type="image/jpeg" href="assets/images/logo/logo-immapa.jpg">
+    <link rel="icon" type="image/jpeg" href="aset/logo immapa.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'immapa-green': '#1a472a',
-                        'immapa-gold': '#facc15',
+                        'immapa-green': '#1E4620',
+                        'immapa-gold': '#fACC15',
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
                     }
                 }
             }
@@ -22,13 +25,13 @@
 </head>
 <body class="font-sans antialiased text-gray-800 bg-gray-50 flex flex-col min-h-screen">
 
-    <!-- NAVBAR -->
-    <header class="bg-immapa-green text-white sticky top-0 z-50 shadow-md">
+   <header class="bg-immapa-green text-white sticky top-0 z-50 shadow-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
-                <img src="aset/logo immapa.png" alt="Logo IMMAPA Bali" class="w-11 h-11 object-contain rounded-full bg-white p-1">
-                <span class="font-bold text-xl tracking-wider">IMMAPA BALI</span>
+            <img src="aset/logo immapa.png" alt="Logo IMMAPA Bali" class="w-10 h-10 object-contain rounded-full bg-white p-1">
+            <span class="font-bold text-xl tracking-wider">IMMAPA BALI</span>
             </a>
+
             <nav class="hidden md:flex space-x-8 font-semibold text-sm">
                 <a href="index.html" class="hover:text-immapa-gold transition duration-300">Beranda</a>
                 <a href="about.html" class="hover:text-immapa-gold transition duration-300">Tentang Kami</a>
@@ -40,18 +43,23 @@
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                 </a>
             </nav>
+
+            <div class="hidden md:block">
+                <a href="#" class="bg-immapa-gold text-immapa-green font-bold px-5 py-2 rounded-full hover:bg-yellow-300 transition duration-300">Hubungi Kami</a>
+            </div>
+
             <button id="mobile-btn" class="md:hidden text-white focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </div>
+
         <div id="mobile-menu" class="hidden md:hidden bg-immapa-green border-t border-white/10 px-6 py-4">
             <div class="flex flex-col space-y-4 text-sm font-semibold">
                 <a href="index.html" class="hover:text-immapa-gold transition">Beranda</a>
                 <a href="about.html" class="hover:text-immapa-gold transition">Tentang Kami</a>
                 <a href="program.html" class="hover:text-immapa-gold transition">Program</a>
                 <a href="gallery.html" class="hover:text-immapa-gold transition">Galeri</a>
-                <a href="struktur.html" class="text-immapa-gold transition">Struktur</a>
-                <a href="https://humasimmapabali.blogspot.com/" target="_blank" class="hover:text-immapa-gold transition">Berita Humas</a>
+                <a href="https://humasimmapabali.blogspot.com/" target="_blank" class="text-immapa-gold">Berita Humas</a>
             </div>
         </div>
     </header>
@@ -85,11 +93,11 @@
                         <h3 class="text-xs text-gray-500 font-bold mb-3 tracking-wider text-center">PEMBINA</h3>
                         <div class="space-y-3">
                             <div class="flex items-center gap-3">
-                                <img src="https://ui-avatars.com/api/?name=Yustus+Kusa&background=1a472a&color=fff" class="w-10 h-10 rounded-full border border-gray-200">
+                                <img src="aset/struktur/Yustus Kusa_page-0001.jpg" class="w-10 h-10 rounded-full border border-gray-200">
                                 <span class="font-semibold text-gray-700 text-sm">1. Yustus Kusa</span>
                             </div>
                             <div class="flex items-center gap-3">
-                                <img src="https://ui-avatars.com/api/?name=Karel+Uropmabin&background=1a472a&color=fff" class="w-10 h-10 rounded-full border border-gray-200">
+                                <img src="aset/struktur/Karel Uropmabin.jpg" class="w-10 h-10 rounded-full border border-gray-200">
                                 <span class="font-semibold text-gray-700 text-sm">2. Karel Uropmabin</span>
                             </div>
                         </div>
@@ -99,12 +107,12 @@
                         <h3 class="text-xs text-gray-500 font-bold mb-3 tracking-wider text-center">PENGARAH</h3>
                         <div class="space-y-3">
                             <div class="flex items-center gap-3">
-                                <img src="https://ui-avatars.com/api/?name=Natalia+Pagawak&background=1a472a&color=fff" class="w-10 h-10 rounded-full border border-gray-200">
+                                <img src="aset/struktur/Natalia M Pagawak.jpeg" class="w-10 h-10 rounded-full border border-gray-200">
                                 <span class="font-semibold text-gray-700 text-sm leading-tight">1. Natalia M Pagawak</span>
                             </div>
                             <div class="flex items-center gap-3">
-                                <img src="https://ui-avatars.com/api/?name=Jack+Faam&background=1a472a&color=fff" class="w-10 h-10 rounded-full border border-gray-200">
-                                <span class="font-semibold text-gray-700 text-sm">2. Jack Soter Faam</span>
+                                <img src="aset/struktur/JECHRIS SOTER FAAM.jpg" class="w-10 h-10 rounded-full border border-gray-200">
+                                <span class="font-semibold text-gray-700 text-sm">2. Jechris Soter Faam</span>
                             </div>
                         </div>
                     </div>
@@ -118,7 +126,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-8">
                     <!-- Ketua -->
                     <div class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-immapa-green text-center">
-                        <img src="https://ui-avatars.com/api/?name=David+Gire&background=1a472a&color=fff&size=200" class="w-28 h-28 mx-auto rounded-full object-cover mb-4 border-4 border-gray-100 shadow-md">
+                        <img src="aset/struktur/devid.jpg" class="w-28 h-28 mx-auto rounded-full object-cover mb-4 border-4 border-gray-100 shadow-md">
                         <h3 class="text-sm text-immapa-green font-bold tracking-widest mb-1 uppercase">Ketua</h3>
                         <p class="text-xl font-bold text-gray-800">Devid L Gire</p>
                     </div>
@@ -132,24 +140,24 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
                     <div class="bg-white p-5 rounded-xl shadow-md border-b-4 border-immapa-gold text-center">
-                        <img src="https://ui-avatars.com/api/?name=Martinus+Kunka&background=facc15&color=1a472a&size=150" class="w-20 h-20 mx-auto rounded-full object-cover mb-3 border-4 border-gray-50">
+                        <img src="aset/struktur/Martinus Kunka.jpg" class="w-20 h-20 mx-auto rounded-full object-cover mb-3 border-4 border-gray-50">
                         <h3 class="text-xs text-gray-500 font-bold tracking-wider mb-1 uppercase">Sekretaris 1</h3>
                         <p class="font-bold text-gray-800">Martinus Kunka</p>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-md border-b-4 border-immapa-gold text-center">
-                        <img src="https://ui-avatars.com/api/?name=Melkianus+Bagau&background=facc15&color=1a472a&size=150" class="w-20 h-20 mx-auto rounded-full object-cover mb-3 border-4 border-gray-50">
+                        <img src="aset/struktur/Mell.png" class="w-20 h-20 mx-auto rounded-full object-cover mb-3 border-4 border-gray-50">
                         <h3 class="text-xs text-gray-500 font-bold tracking-wider mb-1 uppercase">Sekretaris 2</h3>
                         <p class="font-bold text-gray-800">Melkianus W Bagau</p>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-md border-b-4 border-immapa-gold text-center">
-                        <img src="https://ui-avatars.com/api/?name=Reni+Mandabayan&background=facc15&color=1a472a&size=150" class="w-20 h-20 mx-auto rounded-full object-cover mb-3 border-4 border-gray-50">
+                        <img src="aset/struktur/Reni Mandabayan_.jpg" class="w-20 h-20 mx-auto rounded-full object-cover mb-3 border-4 border-gray-50">
                         <h3 class="text-xs text-gray-500 font-bold tracking-wider mb-1 uppercase">Bendahara 1</h3>
                         <p class="font-bold text-gray-800">Reni Mandabayan</p>
                     </div>
                     <div class="bg-white p-5 rounded-xl shadow-md border-b-4 border-immapa-gold text-center">
-                        <img src="https://ui-avatars.com/api/?name=Aplina+Dowansiba&background=facc15&color=1a472a&size=150" class="w-20 h-20 mx-auto rounded-full object-cover mb-3 border-4 border-gray-50">
+                        <img src="aset/struktur/Imelda Erna .webp" class="w-20 h-20 mx-auto rounded-full object-cover mb-3 border-4 border-gray-50">
                         <h3 class="text-xs text-gray-500 font-bold tracking-wider mb-1 uppercase">Bendahara 2</h3>
-                        <p class="font-bold text-gray-800">Aplina I.E Dowansiba</p>
+                        <p class="font-bold text-gray-800">Aplina I E Dowansiba</p>
                     </div>
                 </div>
             </div>
@@ -170,14 +178,14 @@
                         <div class="p-4 flex-1 bg-gray-50 flex flex-col gap-4">
                             <!-- Seksi Pelatihan -->
                             <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 text-center flex flex-col h-full">
-                                <img src="https://ui-avatars.com/api/?name=Ismael+Kebar&background=1a472a&color=fff" class="w-14 h-14 mx-auto rounded-full object-cover mb-2">
+                                <img src="aset/struktur/Metison I Kebar.jpg" class="w-14 h-14 mx-auto rounded-full object-cover mb-2">
                                 <h4 class="text-xs font-bold text-immapa-green mb-1 uppercase">Seksi Pelatihan</h4>
                                 <p class="font-bold text-gray-800 text-sm mb-3">Ismael Kebar</p>
                                 <div class="border-t border-gray-100 pt-3 mt-auto">
                                     <p class="text-[9px] text-gray-400 font-bold mb-2 uppercase">Anggota:</p>
                                     <div class="grid grid-cols-2 gap-2">
                                         <div class="text-center">
-                                            <img src="https://ui-avatars.com/api/?name=Renny+Wanimbo&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1">
+                                            <img src="aset/struktur/Renny Ribka Wanimbo.jpg" class="w-8 h-8 mx-auto rounded-full mb-1">
                                             <p class="text-[10px] font-semibold text-gray-600 leading-tight">Renny Ribka Wanimbo</p>
                                         </div>
                                     </div>
@@ -204,34 +212,34 @@
                     <!-- DIVISI 2: MINAT & BAKAT -->
                     <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden flex flex-col">
                         <div class="bg-immapa-green text-white p-6 text-center border-b-4 border-immapa-gold">
-                            <img src="https://ui-avatars.com/api/?name=Jack+Munggaruak&background=facc15&color=1a472a" class="w-20 h-20 mx-auto rounded-full object-cover mb-3 border-2 border-white shadow-md">
+                            <img src="aset/struktur/Jack munggaruak .jpg" class="w-20 h-20 mx-auto rounded-full object-cover mb-3 border-2 border-white shadow-md">
                             <h3 class="text-[10px] font-bold tracking-wider opacity-90 mb-1 uppercase">Div. Minat & Bakat</h3>
                             <p class="font-bold text-lg leading-tight">Jack Munggaruak</p>
                         </div>
                         <div class="p-4 flex-1 bg-gray-50 flex flex-col gap-4">
                             <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 text-center flex flex-col h-full">
-                                <img src="https://ui-avatars.com/api/?name=Mais+Wanimbo&background=1a472a&color=fff" class="w-14 h-14 mx-auto rounded-full object-cover mb-2">
+                                <img src="aset/struktur/Mais Wanimbo_.jpg" class="w-14 h-14 mx-auto rounded-full object-cover mb-2">
                                 <h4 class="text-xs font-bold text-immapa-green mb-1 uppercase">Seksi Kesenian</h4>
                                 <p class="font-bold text-gray-800 text-sm mb-3">Mais Wanimbo</p>
                                 <div class="border-t border-gray-100 pt-3 mt-auto">
                                     <p class="text-[9px] text-gray-400 font-bold mb-2 uppercase">Anggota:</p>
                                     <div class="grid grid-cols-2 gap-2">
-                                        <div class="text-center"><img src="https://ui-avatars.com/api/?name=Sem+Wakerkwa&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Sem Wakerkwa</p></div>
-                                        <div class="text-center"><img src="https://ui-avatars.com/api/?name=Marko+Momot&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Marko Momot</p></div>
-                                        <div class="text-center col-span-2"><img src="https://ui-avatars.com/api/?name=Dekianus+Tayapa&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Dekianus Tayapa</p></div>
+                                        <div class="text-center"><img src="aset/struktur/Sem Chuma Larzon Wakerkwa.jpg" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Sem C Wakerkwa</p></div>
+                                        <div class="text-center"><img src="aset/struktur/Marko momot_.jpg" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Marko Momot</p></div>
+                                        <div class="text-center col-span-2"><img src="aset/struktur/Dekianus Tayapa.jpg" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Dekianus Tayapa</p></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 text-center flex flex-col h-full">
-                                <img src="https://ui-avatars.com/api/?name=Erson+Wonda&background=1a472a&color=fff" class="w-14 h-14 mx-auto rounded-full object-cover mb-2">
+                                <img src="aset/struktur/Erson w .jpg" class="w-14 h-14 mx-auto rounded-full object-cover mb-2">
                                 <h4 class="text-xs font-bold text-immapa-green mb-1 uppercase">Seksi Olahraga</h4>
                                 <p class="font-bold text-gray-800 text-sm mb-3">Erson Wonda</p>
                                 <div class="border-t border-gray-100 pt-3 mt-auto">
                                     <p class="text-[9px] text-gray-400 font-bold mb-2 uppercase">Anggota:</p>
                                     <div class="grid grid-cols-2 gap-2">
-                                        <div class="text-center"><img src="https://ui-avatars.com/api/?name=Emisinya+Magayan&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Emisinya M.</p></div>
+                                        <div class="text-center"><img src="aset/struktur/Emison magayang_.jpg" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Emisinya Magayan</p></div>
                                         <div class="text-center"><img src="https://ui-avatars.com/api/?name=Orpa+Peyon&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Orpa Peyon</p></div>
-                                        <div class="text-center col-span-2"><img src="https://ui-avatars.com/api/?name=Oksilia+Pekei&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Oksilia Pekei</p></div>
+                                        <div class="text-center col-span-2"><img src="aset/struktur/Oksilia Pekei.jpg" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Oksilia Pekei</p></div>
                                     </div>
                                 </div>
                             </div>
@@ -253,7 +261,7 @@
                                 <div class="border-t border-gray-100 pt-3 mt-auto">
                                     <p class="text-[9px] text-gray-400 font-bold mb-2 uppercase">Anggota:</p>
                                     <div class="grid grid-cols-2 gap-2">
-                                        <div class="text-center"><img src="https://ui-avatars.com/api/?name=Assolina+Tabuni&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Assolina T.</p></div>
+                                        <div class="text-center"><img src="https://ui-avatars.com/api/?name=Assolina+Tabuni&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Assolina Tabuni</p></div>
                                         <div class="text-center"><img src="https://ui-avatars.com/api/?name=Epsan+Trukna&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Epsan Trukna</p></div>
                                         <div class="text-center"><img src="https://ui-avatars.com/api/?name=Kayus+Kwak&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Kayus Kwak</p></div>
                                         <div class="text-center"><img src="https://ui-avatars.com/api/?name=Lemiton+Tabo&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Lemiton Tabo</p></div>
@@ -261,9 +269,9 @@
                                 </div>
                             </div>
                             <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-100 text-center flex flex-col h-full">
-                                <img src="https://ui-avatars.com/api/?name=Sinta+Baransano&background=1a472a&color=fff" class="w-14 h-14 mx-auto rounded-full object-cover mb-2">
+                                <img src="aset/struktur/Shinta S Baransano-1.png" class="w-14 h-14 mx-auto rounded-full object-cover mb-2">
                                 <h4 class="text-xs font-bold text-immapa-green mb-1 uppercase">Seksi Kemasyarakatan</h4>
-                                <p class="font-bold text-gray-800 text-sm mb-3">Sinta Baransano</p>
+                                <p class="font-bold text-gray-800 text-sm mb-3">Sinta S Baransano</p>
                                 <div class="border-t border-gray-100 pt-3 mt-auto">
                                     <p class="text-[9px] text-gray-400 font-bold mb-2 uppercase">Anggota:</p>
                                     <div class="grid grid-cols-2 gap-2">
@@ -303,7 +311,7 @@
                                 <div class="border-t border-gray-100 pt-3 mt-auto">
                                     <p class="text-[9px] text-gray-400 font-bold mb-2 uppercase">Anggota:</p>
                                     <div class="grid grid-cols-2 gap-2">
-                                        <div class="text-center"><img src="https://ui-avatars.com/api/?name=Amelia+Tabuni&background=e5e7eb&color=374151" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Amelia Tabuni</p></div>
+                                        <div class="text-center"><img src="aset/struktur/Amelia T.JPG" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Amelia Tabuni</p></div>
                                         <div class="text-center"><img src="aset/struktur/herland.jpeg" class="w-8 h-8 mx-auto rounded-full mb-1"><p class="text-[10px] font-semibold text-gray-600 leading-tight">Roni Kogoya</p></div>
                                     </div>
                                 </div>
@@ -346,6 +354,7 @@
                         <li><a href="about.html" class="hover:text-white transition">Tentang Kami</a></li>
                         <li><a href="program.html" class="hover:text-white transition">Program & Divisi</a></li>
                         <li><a href="gallery.html" class="hover:text-white transition">Galeri Kegiatan</a></li>
+                        <li><a href="struktur.html" class="hover:text-white transition">Struktur Organisasi</a></li>
                         <li>
                             <a href="https://humasimmapabali.blogspot.com/" target="_blank" class="hover:text-immapa-gold transition duration-300 flex items-center gap-1">
                                 Berita Humas
@@ -376,6 +385,7 @@
     <script>
         const btn = document.getElementById('mobile-btn');
         const menu = document.getElementById('mobile-menu');
+
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
